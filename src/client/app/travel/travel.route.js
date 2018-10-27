@@ -14,6 +14,12 @@
                 templateUrl: 'app/travel/templates/landing.html',
                 controller: 'LandingController',
                 controllerAs: 'landingCtrl'
+            })
+            .state('REPORT', {
+                url: '/report',
+                templateUrl: 'app/travel/templates/report.html',
+                controller: 'ReportController',
+                controllerAs: 'reportCtrl'
             });
     }
 })();

@@ -1,0 +1,27 @@
+<div ng-cloak layout-padding layout-margin>
+    <form name="newUserForm" ng-submit="userCtrl.createUser(userCtrl.user)" ng-submit="userCtrl.addUser">
+        <div layout="column" flex="100" flex-xs="100">
+            <div layout="row" flex layout-align="start center">
+                <md-input-container layout="row" flex>
+                    <input type="text" ng-model="userCtrl.user.firstName" placeholder="First name" required />
+                </md-input-container>
+            </div>
+            <div layout="row" flex layout-align="start center">
+                <md-input-container layout="row" flex>
+                    <input type="text" ng-model="userCtrl.user.lastName" placeholder="Last name" required />
+                </md-input-container>
+            </div>
+            <div layout="row" flex layout-align="start center">
+                <md-input-container layout="row" flex>
+                    <input type="number" ng-model="userCtrl.user.mobile" placeholder="Mobile number" required />
+                </md-input-container>
+            </div>
+            <div layout="row" flex layout-align="center center">
+                <md-input-container layout="row" flex>
+                    <md-button type="submit" style="background: rgb(84, 84, 228)">Create</md-button>
+                    <md-button style="background: gray" ng-click="userCtrl.closeDialog()">Cancel</md-button>
+                </md-input-container>
+            </div>
+        </div>
+    </form>
+</div>
