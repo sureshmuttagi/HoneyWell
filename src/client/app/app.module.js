@@ -1,4 +1,4 @@
-/* global $:false */
+
 (function () {
     'use strict';
 
