@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<style>
+		/* This helps the ng-show/ng-hide animations start at the right place. */
+
+		/* Since Angular has this but needs to load, this gives us the class early. */
+
+		.ng-hide {
+			display: none!important;
+		}
+
+		.md-chips {
+			box-shadow: 0 0px !important;
+		}
+	</style>
+	<title>
+		COMPAS
+	</title>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+	<base href="/">
+
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+
+	<!-- build:css styles/lib.css -->
+	<!-- bower:css -->
+	<link rel="stylesheet" href="/bower_components/PACE/themes/orange/pace-theme-minimal.css" />
+	<link rel="stylesheet" href="/bower_components/offline/themes/offline-language-english.css" />
+	<link rel="stylesheet" href="/bower_components/offline/themes/offline-theme-chrome.css" />
+	<link rel="stylesheet" href="/bower_components/angular-material/angular-material.css" />
+	<!-- endbower -->
+	<!-- endbuild -->
+
+	<!-- build:css styles/app.css -->
+	<!-- inject:css -->
+
+
+	<link rel="stylesheet" href="/.tmp/common.css">
+
+
+	<link rel="stylesheet" href="/.tmp/compas-header.css">
+
+
+	<link rel="stylesheet" href="/.tmp/compas-theme.css">
+
+
+	<link rel="stylesheet" href="/.tmp/compas-utilities.css">
+
+
+	<link rel="stylesheet" href="/.tmp/dashboard-main.css">
+
+
+	<link rel="stylesheet" href="/.tmp/dashboard-responsive.css">
+
+
+	<link rel="stylesheet" href="/.tmp/font-awesome.min.css">
+
+
+	<link rel="stylesheet" href="/.tmp/home.css">
+
+
+	<link rel="stylesheet" href="/.tmp/jcb.css">
+
+
+	<link rel="stylesheet" href="/.tmp/login.css">
+
+
+	<link rel="stylesheet" href="/.tmp/md-accordion.css">
+
+
+	<link rel="stylesheet" href="/.tmp/meterialsuccessor-responsive.css">
+
+
+	<link rel="stylesheet" href="/.tmp/meterialsuccessor-style.css">
+
+
+	<link rel="stylesheet" href="/.tmp/ngPlus.css">
+
+
+	<link rel="stylesheet" href="/.tmp/notes.css">
+
+
+	<link rel="stylesheet" href="/.tmp/order-change-status.css">
+
+
+	<link rel="stylesheet" href="/.tmp/order.css">
+
+
+	<link rel="stylesheet" href="/.tmp/responsive-table.css">
+
+
+	<link rel="stylesheet" href="/.tmp/searchquotes.css">
+
+
+	<link rel="stylesheet" href="/.tmp/slick-theme.css">
+
+
+	<link rel="stylesheet" href="/.tmp/slick.css">
+
+
+	<link rel="stylesheet" href="/.tmp/speedcredit.css">
+
+
+	<link rel="stylesheet" href="/.tmp/table.css">
+
+
+	<link rel="stylesheet" href="/.tmp/timeline-chart.css">
+
+
+	<link rel="stylesheet" href="/.tmp/upb-main.css">
+
+
+	<link rel="stylesheet" href="/.tmp/xcompas-custom-theme.css">
+
+
+	<!-- endinject -->
+	<!-- endbuild -->
+</head>
+
+<body ng-app="traveller">
+
+	<div style="height:100%">
+		<div ng-include="'app/layout/shell.html'" style="height:100%;"></div>
+	</div>
+
+	<!-- build:js js/lib.js -->
+	<!-- bower:js -->
+	<script src="/bower_components/jquery/dist/jquery.js"></script>
+	<script src="/bower_components/PACE/pace.min.js"></script>
+	<script src="/bower_components/offline/offline.min.js"></script>
+	<script src="/bower_components/angular/angular.js"></script>
+	<script src="/bower_components/angular-animate/angular-animate.js"></script>
+	<script src="/bower_components/angular-aria/angular-aria.js"></script>
+	<script src="/bower_components/angular-messages/angular-messages.js"></script>
+	<script src="/bower_components/angular-material/angular-material.js"></script>
+	<script src="/bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+	<script src="/bower_components/angular-sanitize/angular-sanitize.js"></script>
+	<script src="/bower_components/angular-cookies/angular-cookies.js"></script>
+	<script src="/bower_components/extras.angular.plus/ngplus-overlay.js"></script>
+	<script src="/bower_components/angular-recaptcha/release/angular-recaptcha.js"></script>
+	<script src="/bower_components/angular-translate/angular-translate.js"></script>
+	<script src="/bower_components/angular-translate-loader-static-files/angular-translate-loader-static-files.js"></script>
+	<script src="/bower_components/angular-translate-storage-cookie/angular-translate-storage-cookie.js"></script>
+	<script src="/bower_components/angular-translate-storage-local/angular-translate-storage-local.js"></script>
+	<script src="/bower_components/moment/moment.js"></script>
+	<script src="/bower_components/underscore/underscore.js"></script>
+	<script src="/bower_components/ngInfiniteScroll/build/ng-infinite-scroll.js"></script>
+	<script src="/bower_components/d3/d3.js"></script>
+	<script src="/bower_components/ngmap/build/scripts/ng-map.js"></script>
+	<script src="/bower_components/geocomplete/jquery.geocomplete.js"></script>
+	<!-- endbower -->
+	<!-- endbuild -->
+
+	<!-- build:js js/app.js -->
+	<!-- inject:js -->
+
+
+	<script src="/src/client/app/app.module.js"></script>
+
+
+	<script src="/src/client/app/core/core.module.js"></script>
+
+
+	<script src="/src/client/app/layout/layout.module.js"></script>
+
+
+	<script src="/src/client/app/travel/travel.module.js"></script>
+
+
+	<script src="/src/client/app/core/core.route.js"></script>
+
+
+	<script src="/src/client/app/layout/compas-theme-configurator.js"></script>
+
+
+	<script src="/src/client/app/layout/shell.controller.js"></script>
+
+
+	<script src="/src/client/app/travel/controller/landing.controller.js"></script>
+
+
+	<script src="/src/client/app/travel/travel.route.js"></script>
+
+
+	<!-- endinject -->
+
+	<!-- inject:templates:js -->
+	<!-- endinject -->
+	<!-- endbuild -->
+	<!-- <script src="https://bl.ocks.org/mhsmith/raw/5732011/d3-zoom-pan-extent.js"></script> -->
+	<!-- <script src="https://www.google.com/recaptcha/api.js?onload=vcRecaptchaApiLoaded&render=explicit" async defer></script> -->
+
+	<!--Google map api-->
+	<script src="https://www.google.com/recaptcha/api.js?onload=vcRecaptchaApiLoaded&render=explicit" async defer></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDaxkbpHGi2aF5Z7ZuqHHPi98BIVPS7IkM&libraries=places"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
+
+
+</body>
+
+</html>

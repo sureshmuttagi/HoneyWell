@@ -1,0 +1,16 @@
+<div ng-controller="ShellController as vm" layout-fill ng-cloak>
+	
+	<md-content style="height:100%;">
+		<div ui-view layout="column" layout-fill></div>
+	</md-content>
+	<div layout-fill ngplus-overlay ngplus-overlay-delay-in="300" ngplus-overlay-delay-out="700" class="compas-preloader">
+		<img src="images/busy.gif" class="spin" alt="Loading..." />
+		<div translate="{{vm.busyMessage}}">Please wait...</div>
+	</div>
+</div>
+<script type="text/ng-template" id="error-messages">
+	<div ng-message="required" translate="VALIDATION.REQUIRED">This field is required</div>
+	<div ng-message="minlength" tranlate="VALIDATION.MINLENGTH">This field is too short</div>
+	<div ng-message="email" translate="VALIDATION.EMAIL">Enter valid email.</div>
+  <div ng-message="compareTo" translate="VALIDATION.COMPARETO">Must match the previous entry</div>
+</script>
